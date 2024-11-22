@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Color Changer</title>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-200">
+    
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-blue-500 to-blue-600 shadow-md w-full">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a
+          href="../All_Project/index.html"
+          class="text-white font-bold text-2xl hover:text-gray-200 transition duration-300"
+        >
+          Home
+        </a>
+        <h3 class="text-white text-lg font-medium hover:opacity-80 transition duration-300">
+          By Aditi!
+        </h3>
+      </div>
+    </nav>
+
+    <div class="flex-grow flex items-center justify-center">
+      <div class="canvas bg-white p-8 rounded-lg shadow-lg w-4/5 max-w-lg mt-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+          Color Scheme Switcher
+        </h1>
+
+        <!-- Buttons -->
+        <div class="flex justify-center gap-4 mb-6">
+          <span
+            class="button w-14 h-14 rounded-full cursor-pointer bg-gray-400 hover:opacity-80 transition duration-300"
+            id="grey"
+          ></span>
+          <span
+            class="button w-14 h-14 rounded-full cursor-pointer bg-white border border-gray-400 hover:shadow-lg transition duration-300"
+            id="white"
+          ></span>
+          <span
+            class="button w-14 h-14 rounded-full cursor-pointer bg-blue-500 hover:opacity-80 transition duration-300"
+            id="blue"
+          ></span>
+          <span
+            class="button w-14 h-14 rounded-full cursor-pointer bg-yellow-400 hover:opacity-80 transition duration-300"
+            id="yellow"
+          ></span>
+          <span
+            class="button w-14 h-14 rounded-full cursor-pointer bg-orange-300 hover:opacity-80 transition duration-300"
+            id="orange"
+          ></span>
+        </div>
+
+        <!-- Instructions -->
+        <p
+          class="text-center text-gray-600 font-medium bg-gray-100 p-4 rounded-lg shadow-sm"
+        >
+          Click on the colors above to change the background color of this page.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

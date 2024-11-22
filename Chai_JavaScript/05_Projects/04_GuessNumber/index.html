@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Guess The Number</title>
+  </head>
+
+  <body class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-blue-500 to-blue-600 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a
+          href="../All_Project/index.html"
+          class="text-white font-bold text-2xl hover:text-gray-200 transition duration-300"
+        >
+          Home
+        </a>
+        <h3 class="text-white text-lg font-medium hover:opacity-80 transition duration-300">
+          By Aditi!
+        </h3>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-grow items-center justify-center">
+      <div
+        id="wrapper"
+        class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full text-center"
+      >
+        <h1 class="text-3xl font-bold text-purple-700 mb-4">
+          Number Guessing Game
+        </h1>
+        <p class="text-gray-600 mb-2">
+          Try & Guess the Random Number Between 1 to 100
+        </p>
+        <p class="text-gray-600 mb-6">
+          You have 10 attempts to Guess the Right Number
+        </p>
+        <form action="" class="space-y-4">
+          <div>
+            <label
+              for="guessFeild"
+              id="guess"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Guess a Number</label
+            >
+            <input
+              type="number"
+              id="guessFeild"
+              class="guessFeild w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 placeholder-gray-400"
+              placeholder="Enter Your Guess"
+            />
+          </div>
+          <div>
+            <input
+              type="submit"
+              id="subt"
+              value="Submit Guess"
+              class="guessSubmit w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+            />
+          </div>
+          <div class="resultParas">
+            <p class="font-bold pt-3" id="prevgues">Previous Guess :</p>
+            <p class="font-bold">
+              Guesses Remaining : <span id="guessRemaining"></span>
+            </p>
+            <p class="lowOrHi"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
